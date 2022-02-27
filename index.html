@@ -206,7 +206,15 @@
           </section>
         </div>
         <section id="0">
-          <video width="100%" height="100%" playsinline autoplay muted loop>
+          <video
+            width="100%"
+            height="100%"
+            id="fintechvideo"
+            playsinline
+            autoplay
+            muted
+            loop
+          >
             <source src="./assets/video/Fintechgam.mp4" type="video/mp4" />
 
             Your browser does not support the video tag.
@@ -285,6 +293,10 @@
     <script src="./assets/libs/aos/aos.js"></script>
     <script src="./assets/libs/slick/slick.min.js"></script>
     <script defer src="././assets/js/main.min.js"></script>
-    <script></script>
+    <script>
+      window.onload = () => {
+        document.getElementById("fintechvideo").play();
+      };
+    </script>
   </body>
 </html>
